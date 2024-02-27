@@ -14,7 +14,16 @@ const loadPhone = async (searchText, isShowAll) => {
     );
     const data = await res.json();
     const phones = data.data;
-    // console.log(phones);
+
+    // If no phones are found, display an alert message
+    const alertElement = document.getElementById("alert");
+    alertElement.textContent = "";
+    if (phones.length === 0) {
+      spinnerHandler(false);
+      alertElement.innerHTML = `<h2 class="text-4xl text-black font-bold"> No Data Found </h2>`;
+      return;
+    }
+
     displayPhones(phones, isShowAll);
   } catch (error) {
     console.error("something happened", error);
