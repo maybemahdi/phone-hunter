@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Phone Hunter</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -111,9 +112,17 @@
         <div
           class="w-24 h-24 border-8 text-blue-400 text-4xl animate-spin border-gray-300 flex items-center justify-center border-t-blue-400 rounded-full"
         >
-        <svg viewBox="0 0 24 24" fill="currentColor" height="1em" width="1em" class="animate-ping">
-          <path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z"></path>
-        </svg>
+          <svg
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            height="1em"
+            width="1em"
+            class="animate-ping"
+          >
+            <path
+              d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z"
+            ></path>
+          </svg>
         </div>
       </div>
       <div
@@ -159,6 +168,65 @@
           Show All
         </button>
       </div>
+
+      <!-- modal  -->
+      <section id="popup" class="hidden">
+        <!-- <div
+          class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto w-full"
+          aria-modal="true"
+          role="dialog"
+        >
+          <div class="relative top-3 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
+            <div class="text-center">
+              <div
+                class="mx-auto mb-5 flex items-center justify-center rounded-md bg-blue-100"
+              >
+                <img
+                  src="./images/pngwing 3.png"
+                  alt="Phone Image"
+                  class="w-[150px] h-[250px]"
+                />
+              </div>
+              <h3
+                class="text-lg text-left leading-6 font-medium text-gray-900 mt-2 mb-4"
+              >
+                Iphone 13 Pro Max
+              </h3>
+              <div class="text-sm text-left text-gray-500">
+                <ul class="text-left mt-4 space-y-2">
+                  <li>
+                    <strong>Storage:</strong> 128GB/256GB/1TB Storage, No card
+                    slot
+                  </li>
+                  <li><strong>Display Size:</strong> 6.7 Inches, 109.8 cm</li>
+                  <li><strong>Chipset:</strong> Apple A15 Bionic</li>
+                  <li>
+                    <strong>Memory:</strong> 128GB 6 GB RAM, 256GB RAM, 512GB
+                    RAM 1TB 6GB RAM
+                  </li>
+                  <li><strong>Slug:</strong> Applice_Iphone_13_Pro_Max</li>
+                  <li>
+                    <strong>Release date:</strong> Released 2021, September 24
+                  </li>
+                  <li><strong>Brand:</strong> Apple</li>
+                  <li>
+                    <strong>GPS:</strong> A-yes, with A-GPS, GLONASS, GALILEO,
+                    BDS, QZSS
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-5 sm:mt-6">
+                <button
+                  id="close-modal"
+                  class="items-center whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:text-sm"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </section>
     </main>
     <footer>
       <footer class="bg-[#0D6EFD0D] py-12 lg:py-[80px]">
