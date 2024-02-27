@@ -33,7 +33,7 @@ function displayPhones(phones, isShowAll) {
     showAll.classList.add("hidden");
   }
 
-  // show how many you want to:
+  // show: how many you want to
   // show-all button event
   if (!isShowAll) {
     phones = phones.slice(0, 12);
@@ -114,11 +114,11 @@ function showPhoneDetails(phone) {
   popup.classList.remove("hidden");
   popup.innerHTML = `
   <div
-  class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto w-full"
+  class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full flex justify-center items-center"
   aria-modal="true"
   role="dialog"
 >
-  <div class="relative top-3 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
+  <div class="mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
     <div class="text-center">
       <div
         class="mx-auto mb-5 flex items-center justify-center rounded-md bg-blue-100"
@@ -170,4 +170,4 @@ function showPhoneDetails(phone) {
   close.addEventListener("click", () => {
     popup.classList.add("hidden");
   });
-};
+}
