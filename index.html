@@ -42,7 +42,6 @@
           class="hover:bg-[#1d67d5] cursor-pointer transition-ease-in duration-300 bg-[#0D6EFD] md:block py-[7px] lg:py-[8px] px-[8px] md:px-[24px] rounded-md text-[18px] lg:text-xl font-bold text-[#ffffff]"
         >
           Sign Up
-          <img class="inline" src="./images/bus-icon.png" alt="" />
         </button>
       </div>
       <div class="bg-[#ffffff] py-16">
@@ -89,12 +88,14 @@
             >
               <img src="./images/Frame (9).png" alt="" />
               <input
+                id="search-field"
                 class="flex h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 w-full border-none"
                 placeholder="Search your phone"
                 type="text"
               />
             </div>
             <button
+              id="search-btn"
               class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 px-6 py-[28px] bg-blue-500 text-white"
             >
               Search
@@ -102,8 +103,24 @@
           </div>
         </div>
       </div>
-      <div id="product" class="grid grid-cols-1 lg:grid-cols-3 gap-6 my-[30px]">
+      <!-- spinner -->
+      <div
+        id="spinner"
+        class="flex-col gap-4 w-full flex items-center justify-center mt-10 hidden"
+      >
         <div
+          class="w-24 h-24 border-8 text-blue-400 text-4xl animate-spin border-gray-300 flex items-center justify-center border-t-blue-400 rounded-full"
+        >
+        <svg viewBox="0 0 24 24" fill="currentColor" height="1em" width="1em" class="animate-ping">
+          <path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z"></path>
+        </svg>
+        </div>
+      </div>
+      <div
+        id="products"
+        class="grid grid-cols-1 lg:grid-cols-3 gap-6 my-[30px]"
+      >
+        <!-- <div
           class="border text-card-foreground w-full bg-white rounded-lg shadow-lg"
           data-v0-t="card"
         >
@@ -132,247 +149,15 @@
               Show Details
             </button>
           </div>
-        </div>
-        <div
-          class="border text-card-foreground w-full bg-white rounded-lg shadow-lg"
-          data-v0-t="card"
+        </div> -->
+      </div>
+      <div class="mx-auto flex justify-center items-center">
+        <button
+          id="show-all"
+          class="items-center justify-center whitespace-nowrap rounded-md text-sm font-medium hover:bg-primary/90 h-10 px-6 bg-blue-500 text-white hidden"
         >
-          <div class="flex flex-col space-y-1.5 p-6">
-            <img
-              src="./images/pngwing 4.png"
-              alt="Iphone 13 Pro Max"
-              class="mx-auto mt-4 w-[199px] h-[243px]"
-              style="aspect-ratio: 200 / 200; object-fit: cover"
-            />
-          </div>
-          <div class="p-4">
-            <h2 class="text-lg font-semibold text-center">Iphone 13 Pro Max</h2>
-            <p class="text-sm text-gray-600 text-center mt-2">
-              There are many variations of passages of available, but the
-              majority have suffered
-            </p>
-            <div class="text-center text-3xl font-bold text-gray-900 mt-4">
-              $999
-            </div>
-          </div>
-          <div class="items-center p-6 flex justify-center pb-4">
-            <button
-              class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 bg-[#0D6EFD] text-[#ffff] hover:bg-[#2070e7] h-10 px-4 py-2 w-full"
-            >
-              Show Details
-            </button>
-          </div>
-        </div>
-        <div
-          class="border text-card-foreground w-full bg-white rounded-lg shadow-lg"
-          data-v0-t="card"
-        >
-          <div class="flex flex-col space-y-1.5 p-6">
-            <img
-              src="./images/pngwing 4.png"
-              alt="Iphone 13 Pro Max"
-              class="mx-auto mt-4 w-[199px] h-[243px]"
-              style="aspect-ratio: 200 / 200; object-fit: cover"
-            />
-          </div>
-          <div class="p-4">
-            <h2 class="text-lg font-semibold text-center">Iphone 13 Pro Max</h2>
-            <p class="text-sm text-gray-600 text-center mt-2">
-              There are many variations of passages of available, but the
-              majority have suffered
-            </p>
-            <div class="text-center text-3xl font-bold text-gray-900 mt-4">
-              $999
-            </div>
-          </div>
-          <div class="items-center p-6 flex justify-center pb-4">
-            <button
-              class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 bg-[#0D6EFD] text-[#ffff] hover:bg-[#2070e7] h-10 px-4 py-2 w-full"
-            >
-              Show Details
-            </button>
-          </div>
-        </div>
-        <div
-          class="border text-card-foreground w-full bg-white rounded-lg shadow-lg"
-          data-v0-t="card"
-        >
-          <div class="flex flex-col space-y-1.5 p-6">
-            <img
-              src="./images/pngwing 4.png"
-              alt="Iphone 13 Pro Max"
-              class="mx-auto mt-4 w-[199px] h-[243px]"
-              style="aspect-ratio: 200 / 200; object-fit: cover"
-            />
-          </div>
-          <div class="p-4">
-            <h2 class="text-lg font-semibold text-center">Iphone 13 Pro Max</h2>
-            <p class="text-sm text-gray-600 text-center mt-2">
-              There are many variations of passages of available, but the
-              majority have suffered
-            </p>
-            <div class="text-center text-3xl font-bold text-gray-900 mt-4">
-              $999
-            </div>
-          </div>
-          <div class="items-center p-6 flex justify-center pb-4">
-            <button
-              class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 bg-[#0D6EFD] text-[#ffff] hover:bg-[#2070e7] h-10 px-4 py-2 w-full"
-            >
-              Show Details
-            </button>
-          </div>
-        </div>
-        <div
-          class="border text-card-foreground w-full bg-white rounded-lg shadow-lg"
-          data-v0-t="card"
-        >
-          <div class="flex flex-col space-y-1.5 p-6">
-            <img
-              src="./images/pngwing 4.png"
-              alt="Iphone 13 Pro Max"
-              class="mx-auto mt-4 w-[199px] h-[243px]"
-              style="aspect-ratio: 200 / 200; object-fit: cover"
-            />
-          </div>
-          <div class="p-4">
-            <h2 class="text-lg font-semibold text-center">Iphone 13 Pro Max</h2>
-            <p class="text-sm text-gray-600 text-center mt-2">
-              There are many variations of passages of available, but the
-              majority have suffered
-            </p>
-            <div class="text-center text-3xl font-bold text-gray-900 mt-4">
-              $999
-            </div>
-          </div>
-          <div class="items-center p-6 flex justify-center pb-4">
-            <button
-              class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 bg-[#0D6EFD] text-[#ffff] hover:bg-[#2070e7] h-10 px-4 py-2 w-full"
-            >
-              Show Details
-            </button>
-          </div>
-        </div>
-        <div
-          class="border text-card-foreground w-full bg-white rounded-lg shadow-lg"
-          data-v0-t="card"
-        >
-          <div class="flex flex-col space-y-1.5 p-6">
-            <img
-              src="./images/pngwing 4.png"
-              alt="Iphone 13 Pro Max"
-              class="mx-auto mt-4 w-[199px] h-[243px]"
-              style="aspect-ratio: 200 / 200; object-fit: cover"
-            />
-          </div>
-          <div class="p-4">
-            <h2 class="text-lg font-semibold text-center">Iphone 13 Pro Max</h2>
-            <p class="text-sm text-gray-600 text-center mt-2">
-              There are many variations of passages of available, but the
-              majority have suffered
-            </p>
-            <div class="text-center text-3xl font-bold text-gray-900 mt-4">
-              $999
-            </div>
-          </div>
-          <div class="items-center p-6 flex justify-center pb-4">
-            <button
-              class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 bg-[#0D6EFD] text-[#ffff] hover:bg-[#2070e7] h-10 px-4 py-2 w-full"
-            >
-              Show Details
-            </button>
-          </div>
-        </div>
-        <div
-          class="border text-card-foreground w-full bg-white rounded-lg shadow-lg"
-          data-v0-t="card"
-        >
-          <div class="flex flex-col space-y-1.5 p-6">
-            <img
-              src="./images/pngwing 4.png"
-              alt="Iphone 13 Pro Max"
-              class="mx-auto mt-4 w-[199px] h-[243px]"
-              style="aspect-ratio: 200 / 200; object-fit: cover"
-            />
-          </div>
-          <div class="p-4">
-            <h2 class="text-lg font-semibold text-center">Iphone 13 Pro Max</h2>
-            <p class="text-sm text-gray-600 text-center mt-2">
-              There are many variations of passages of available, but the
-              majority have suffered
-            </p>
-            <div class="text-center text-3xl font-bold text-gray-900 mt-4">
-              $999
-            </div>
-          </div>
-          <div class="items-center p-6 flex justify-center pb-4">
-            <button
-              class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 bg-[#0D6EFD] text-[#ffff] hover:bg-[#2070e7] h-10 px-4 py-2 w-full"
-            >
-              Show Details
-            </button>
-          </div>
-        </div>
-        <div
-          class="border text-card-foreground w-full bg-white rounded-lg shadow-lg"
-          data-v0-t="card"
-        >
-          <div class="flex flex-col space-y-1.5 p-6">
-            <img
-              src="./images/pngwing 4.png"
-              alt="Iphone 13 Pro Max"
-              class="mx-auto mt-4 w-[199px] h-[243px]"
-              style="aspect-ratio: 200 / 200; object-fit: cover"
-            />
-          </div>
-          <div class="p-4">
-            <h2 class="text-lg font-semibold text-center">Iphone 13 Pro Max</h2>
-            <p class="text-sm text-gray-600 text-center mt-2">
-              There are many variations of passages of available, but the
-              majority have suffered
-            </p>
-            <div class="text-center text-3xl font-bold text-gray-900 mt-4">
-              $999
-            </div>
-          </div>
-          <div class="items-center p-6 flex justify-center pb-4">
-            <button
-              class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 bg-[#0D6EFD] text-[#ffff] hover:bg-[#2070e7] h-10 px-4 py-2 w-full"
-            >
-              Show Details
-            </button>
-          </div>
-        </div>
-        <div
-          class="border text-card-foreground w-full bg-white rounded-lg shadow-lg"
-          data-v0-t="card"
-        >
-          <div class="flex flex-col space-y-1.5 p-6">
-            <img
-              src="./images/pngwing 4.png"
-              alt="Iphone 13 Pro Max"
-              class="mx-auto mt-4 w-[199px] h-[243px]"
-              style="aspect-ratio: 200 / 200; object-fit: cover"
-            />
-          </div>
-          <div class="p-4">
-            <h2 class="text-lg font-semibold text-center">Iphone 13 Pro Max</h2>
-            <p class="text-sm text-gray-600 text-center mt-2">
-              There are many variations of passages of available, but the
-              majority have suffered
-            </p>
-            <div class="text-center text-3xl font-bold text-gray-900 mt-4">
-              $999
-            </div>
-          </div>
-          <div class="items-center p-6 flex justify-center pb-4">
-            <button
-              class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 bg-[#0D6EFD] text-[#ffff] hover:bg-[#2070e7] h-10 px-4 py-2 w-full"
-            >
-              Show Details
-            </button>
-          </div>
-        </div>
+          Show All
+        </button>
       </div>
     </main>
     <footer>
@@ -445,7 +230,6 @@
         </div>
       </footer>
     </footer>
-
 
     <script src="./js/app.js"></script>
   </body>
